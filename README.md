@@ -12,5 +12,5 @@ The code generate bounding volume hierarchy (BVH) of arbitrary class T, which is
 
         BVH<Object> bvh;
         bvh.ConstructBVH(objects);
-        bvh.SaveAsVtk(); // The result is saved as VTK (ParaView) format
+        bvh.SaveAsVtk("BVH.vtk"); // The result is saved as VTK (ParaView) format
     }
