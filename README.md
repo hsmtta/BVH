@@ -4,13 +4,13 @@ The code generate bounding volume hierarchy (BVH) of arbitrary class T, which is
 
 # Sample code
 
-void main()
-{
-    // Class "Object" must have member variables: 
-    // "Mat23 bbox" as a bounding box, and "Vec3 center" as a gravity center of bounding box
-    std::vector<Object*> objects;
+    void main()
+    {
+        // Class "Object" must have member variables: 
+        // "Mat23 bbox" as a bounding box, and "Vec3 center" as a gravity center of bounding box
+        std::vector<Object*> objects;
 
-    BVH bvh;
-    bvh.ConstructBVH(objects);
-    bvh.SaveAsVtk();
-}
+        BVH bvh;
+        bvh.ConstructBVH(objects);
+        bvh.SaveAsVtk();
+    }
